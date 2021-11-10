@@ -1,26 +1,26 @@
 body {
-  
+justify-content: center;
+align-content: center;
   margin: 20% auto;
   width: 50%;
   height: 75%;
 }
+
 li button {
-color:white;
-background-color: black;
+  color: white;
+  background-color: black;
   border-radius: 50px;
 }
+
 h1 {
   font-family: 'Orbitron', sans-serif;
-  
+
   color: black;
   text-align: center;
-  
+
 }
+
 table {
   border-width: 1px;
   background-color: darkgray;
-}
-div .result {
-  background-color: white;
-  padding: 5px, 5px, 5px, 5px;
 }

@@ -6,7 +6,7 @@ let operation = null
 
 // this function takes in the number you type in the input field and saves it to the "firstNum" variable
 const saveFirstNumber = (num) => {
-  firstNum = parseInt(num)  
+  firstNum = parseInt(num)
 }
 
 // this function takes in the number you type in the 2nd input field and saves it to the "secondNum" variable
@@ -48,7 +48,7 @@ const divide = (numA, numB) => {
 // and % to get a remainder.
 const modulus = (numA, numB) => {
   const remainder = numA / numB
-return remainder
+  return remainder
 }
 // This function changes the "operation" variable to be equal to the "id" of the button we choose on the web page.
 const changeOperation = (chosenOperation) => {
@@ -69,17 +69,22 @@ const putResultInElement = (operationResults) => {
 // The function uses the value of "operation" variable to determine which operation function it should use on the number: add, subtract, multiply, divide, or modulus
 const equals = () => {
   switch (operation) {
-    case "addition":  putResultInElement(add(firstNum, secondNum)) 
-    break;
-    case "subtraction": putResultInElement(subtract(firstNum, secondNum)) 
-    break;
-    case "multiplication": putResultInElement(multiply(firstNum, secondNum)) 
-    break;
-    case "division": putResultInElement(divide(firstNum, secondNum)) 
-    break;
-    case "modulus": putResultInElement(modulus(firstNum, secondNum)) 
-    break;
-    default: "Choose an operation"
+    case "addition":
+      putResultInElement(add(firstNum, secondNum))
+      break;
+    case "subtraction":
+      putResultInElement(subtract(firstNum, secondNum))
+      break;
+    case "multiplication":
+      putResultInElement(multiply(firstNum, secondNum))
+      break;
+    case "division":
+      putResultInElement(divide(firstNum, secondNum))
+      break;
+    case "modulus":
+      putResultInElement(modulus(firstNum, secondNum))
+      break;
+    default:
+      "Choose an operation"
   }
 }
-
